@@ -8,8 +8,11 @@ const About = () => {
           <CardTitle className="text-3xl font-bold text-center mb-8">About Me</CardTitle>
         </CardHeader>
         <CardContent>
+          <p className="text-lg text-foreground/80 leading-relaxed mb-6">
+            As a graduate in Electrical and Electronic Engineering with a passion for Biomedical Engineering and Machine Learning, I enjoy creating machine learning models to tackle real-world healthcare challenges. My work spans a range of cutting-edge projects, including mobile applications for real-time cataract detection, optimizing neural networks for brain tumor classification, and exploring AI-driven solutions for antibiotic resistance prediction. With expertise in Python, MATLAB, and various deep learning frameworks, I am constantly pushing myself to create impactful, real-world applications.
+          </p>
           <p className="text-lg text-foreground/80 leading-relaxed">
-            I am an aspiring PhD candidate with a passion for bridging the gap between Biomedical Engineering and Artificial Intelligence. My research focuses on developing innovative AI-driven solutions for complex biomedical challenges, with a particular interest in neural engineering and brain-computer interfaces. Through my work, I aim to contribute to advancements in healthcare technology and improve patient outcomes.
+            I have a pretty competitive nature. Outside of work, I enjoy mentoring students and staying active through a variety of sports, both indoor and outdoor, such as badminton, cricket, table tennis, and soccer. Moreover, I also have an interest in competitive online gaming, especially FPS games.
           </p>
         </CardContent>
       </Card>
