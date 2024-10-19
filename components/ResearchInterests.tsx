@@ -14,8 +14,8 @@ const ResearchInterests = () => {
       description: "Developing applications that use image processing and machine learning to interpret and analyze medical images, aiding in diagnostic accuracy and treatment planning."
     },
     {
-      title: "Genetic Engineering",
-      description: "Researching the manipulation of genes to develop new therapies for genetic disorders, and investigating how genetic modifications can be applied to medicine."
+      title: "Nanomedicine",
+      description: "Investigating the use of nanoparticles and nanotechnology for targeted drug delivery, cancer therapy, and improving the efficiency of medical treatments at the molecular level."
     },
     {
       title: "Medical Imaging",

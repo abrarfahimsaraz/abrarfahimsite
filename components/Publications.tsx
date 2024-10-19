@@ -3,22 +3,19 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const Publications = () => {
   const publications = [
     {
-      title: "AI-Driven Brain-Computer Interfaces: A Comprehensive Review",
-      authors: "Fahim, A., Smith, J., & Johnson, L.",
-      journal: "Nature Neuroscience",
-      year: 2022
+      title: "Predicting Antibiotic Resistance in Gonococcal Gonorrhea: A Comparative Study of Machine Learning and Deep Learning Approaches with Explainable AI",
+      description: "Utilized Explainable AI (XAI) tools to explore machine learning and deep learning techniques, such as GRU and LSTM, for predicting antibiotic resistance in Neisseria gonorrhoeae, demonstrating high prediction accuracy and potential solutions for antibiotic resistance in public health.",
+      status: "Under Review, ICCIT 2024, IEEE Conferences"
     },
     {
-      title: "Machine Learning Approaches in Biomedical Signal Processing: Current Trends and Future Directions",
-      authors: "Fahim, A., & Brown, R.",
-      journal: "IEEE Transactions on Biomedical Engineering",
-      year: 2021
+      title: "Analysis of Pre-trained CNN Models in MRI-Based Brain Tumor Detection",
+      description: "Performed a comparative analysis of five pre-trained CNN models (InceptionV3, ResNet-50, VGG-16, MobileNetV2, DenseNet121) for classifying brain tumors in MRI images, with DenseNet121 and MobileNetV2 achieving the highest test accuracy in both binary and multi-class classification tasks, showing promise for clinical use.",
+      status: "Under Review, ICCIT 2024, IEEE Conferences"
     },
     {
-      title: "Neuroprosthetic Advancements: Integrating AI for Enhanced Functionality",
-      authors: "Johnson, L., Fahim, A., & Davis, M.",
-      journal: "Frontiers in Neuroscience",
-      year: 2020
+      title: "VisionEdge: Cataract Detection via Smartphone",
+      description: "Developed VisionEdge, a mobile app using MobileNetV2 for real-time cataract detection with 99.11% accuracy, optimized for Edge Intelligence, providing a cost-effective and accessible solution for cataract screening.",
+      status: "Under Review, ICCIT 2024, IEEE Conferences"
     }
   ];
 
@@ -32,8 +29,9 @@ const Publications = () => {
               <CardTitle>{pub.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-foreground/80">{pub.authors}</p>
-              <p className="text-foreground/60">{pub.journal}, {pub.year}</p>
+              <p className="text-foreground/80">{pub.description}</p>
+              <br /> {/* Line break for space between description and status */}
+              <p className="text-foreground/60">{pub.status}</p>
             </CardContent>
           </Card>
         ))}
