@@ -1,13 +1,30 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-
 const ResearchInterests = () => {
   const interests = [
-    "Neural Engineering",
-    "Brain-Computer Interfaces",
-    "Machine Learning in Healthcare",
-    "Biomedical Signal Processing",
-    "AI-driven Diagnostic Tools",
-    "Neuroprosthetics"
+    {
+      title: "Biomedical Devices",
+      description: "Exploring innovative advancements in combining engineering principles with medical sciences to develop cutting-edge equipments for healthcare improvement."
+    },
+    {
+      title: "Machine Learning",
+      description: "Leveraging advanced algorithms to create predictive models and enhance decision-making processes in medical diagnostics and treatment."
+    },
+    {
+      title: "Computer Vision",
+      description: "Developing applications that use image processing and machine learning to interpret and analyze medical images, aiding in diagnostic accuracy and treatment planning."
+    },
+    {
+      title: "Genetic Engineering",
+      description: "Researching the manipulation of genes to develop new therapies for genetic disorders, and investigating how genetic modifications can be applied to medicine."
+    },
+    {
+      title: "Medical Imaging",
+      description: "Advancing the use of imaging technologies such as MRI, CT scans, and ultrasound for enhanced visualization of internal body structures to improve diagnostics and patient outcomes."
+    },
+    {
+      title: "Biomedical Signal Processing",
+      description: "Processing physiological signals, such as ECG, EEG, and EMG, to extract valuable clinical insights, enabling early diagnosis and monitoring of various medical conditions."
+    }
   ];
 
   return (
@@ -17,11 +34,11 @@ const ResearchInterests = () => {
         {interests.map((interest, index) => (
           <Card key={index}>
             <CardHeader>
-              <CardTitle className="text-lg">{interest}</CardTitle>
+              <CardTitle className="text-lg">{interest.title}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-foreground/80">
-                Exploring innovative applications and advancements in this field.
+                {interest.description}
               </p>
             </CardContent>
           </Card>
