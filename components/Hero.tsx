@@ -8,10 +8,10 @@ const Hero = () => {
         Abrar Fahim
       </h1>
       <h2 className="text-2xl md:text-3xl text-white mb-8">
-        PhD Candidate in Biomedical Engineering and Artificial Intelligence
+        Aspiring PhD Candidate in Biomedical Engineering and Machine Learning
       </h2>
       <Button className="bg-white text-primary hover:bg-primary hover:text-white transition-colors duration-300">
-        View My Research <ArrowRight className="ml-2 h-4 w-4" />
+        About My Research <ArrowRight className="ml-2 h-4 w-4" />
       </Button>
     </section>
   );

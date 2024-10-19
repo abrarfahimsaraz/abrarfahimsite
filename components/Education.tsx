@@ -3,19 +3,19 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const Education = () => {
   const educationData = [
     {
-      degree: "PhD in Biomedical Engineering (In Progress)",
-      institution: "Stanford University",
-      year: "2021 - Present"
+      degree: "BSc. in Electrical and Electronic Engineering",
+      institution: "Islamic University of Technology",
+      year: "2020-2024"
     },
     {
-      degree: "MSc in Artificial Intelligence",
-      institution: "Massachusetts Institute of Technology",
-      year: "2019 - 2021"
+      degree: "HSC (Science)",
+      institution: "Chittagong College",
+      year: "2017 - 2019"
     },
     {
-      degree: "BSc in Electrical and Electronic Engineering",
-      institution: "Bangladesh University of Engineering and Technology",
-      year: "2014 - 2019"
+      degree: "SSC (Science)",
+      institution: "Govt. Muslim High School",
+      year: "2011 - 2017"
     }
   ];
 

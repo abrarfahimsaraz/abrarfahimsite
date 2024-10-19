@@ -48,7 +48,7 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link href="#about" className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium">About</Link>
             <Link href="#education" className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Education</Link>
-            <Link href="#research" className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Research</Link>
+            <Link href="#research" className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Research Interests</Link>
             <Link href="#publications" className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Publications</Link>
             <Link href="#projects" className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Projects</Link>
             <Link href="#experience" className="text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Experience</Link>
