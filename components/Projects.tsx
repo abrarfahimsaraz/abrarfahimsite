@@ -4,7 +4,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Plasmonic Coupling and Thermal Effects on Photothermal Response of Randomly Distributed Nanoparticles",
-      description: "Investigated the influence of plasmonic coupling on the photothermal behavior of silver nanoparticles and applied the Discrete Dipole Approximation (DDA) along with thermal Green’s function to compute temperature profiles under illumination. Simulated the code in MATLAB and Python to illustrate nanoscale temperature profiles, histograms, scatterplots, and absorption spectra.",
+      description: "Investigated the influence of plasmonic coupling on the photothermal behavior of silver nanoparticles and simulated nanoscale temperature profiles under illumination in MATLAB and used Python to illustrate histograms, scatterplots, and the absorption spectra.",
       status: "Undergraduate Thesis"
     },
     {
