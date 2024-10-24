@@ -3,33 +3,33 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const WorkExperience = () => {
   const experiences = [
     {
-      position: "Research Assistant",
-      company: "Stanford Bioengineering Lab",
-      duration: "2021 - Present",
+      position: "Part Time Teacher",
+      company: "Shejuti School & College",
+      duration: "June 2024 - Present",
       responsibilities: [
-        "Conducting research on AI applications in neural engineering",
-        "Developing machine learning models for biomedical signal processing",
-        "Collaborating with interdisciplinary teams on cutting-edge projects"
+        "Part time English, ICT, and Biology instructor for students of class IX and X."
       ]
     },
     {
-      position: "AI Engineer Intern",
-      company: "Neuralink",
-      duration: "Summer 2020",
+      position: "Technical Writing Intern",
+      company: "The Financial Express Bangladesh",
+      duration: "Jan 2022 - July 2022",
       responsibilities: [
-        "Assisted in the development of AI algorithms for brain-computer interfaces",
-        "Contributed to the optimization of neural decoding techniques",
-        "Participated in data analysis and visualization of brain activity patterns"
+        {
+          text: "Content writing trainee for the Sci-tech section and published two articles:",
+          subpoints: [
+            "Elon Musk’s long-standing vision to integrate A.I. into the human brain.",
+            "Your smartphone screen can be black and white."
+          ]
+        }
       ]
     },
     {
-      position: "Undergraduate Research Assistant",
-      company: "BUET AI Lab",
-      duration: "2018 - 2019",
+      position: "Tutor & Mentor",
+      company: "Shikkhangon (Learning Academy)",
+      duration: "March 2020 - June 2024",
       responsibilities: [
-        "Worked on machine learning projects related to healthcare applications",
-        "Assisted in the development of a deep learning model for medical image analysis",
-        "Contributed to academic papers and presentations"
+        "Provided personalized instruction in English and Biology to students, helping in their academics."
       ]
     }
   ];
@@ -48,7 +48,18 @@ const WorkExperience = () => {
             <CardContent>
               <ul className="list-disc list-inside text-foreground/80">
                 {exp.responsibilities.map((resp, idx) => (
-                  <li key={idx}>{resp}</li>
+                  typeof resp === "string" ? (
+                    <li key={idx}>{resp}</li>
+                  ) : (
+                    <li key={idx}>
+                      {resp.text}
+                      <ul className="list-disc list-inside ml-4">
+                        {resp.subpoints.map((subpoint, subIdx) => (
+                          <li key={subIdx}>{subpoint}</li>
+                        ))}
+                      </ul>
+                    </li>
+                  )
                 ))}
               </ul>
             </CardContent>
@@ -60,3 +71,6 @@ const WorkExperience = () => {
 };
 
 export default WorkExperience;
+
+
+

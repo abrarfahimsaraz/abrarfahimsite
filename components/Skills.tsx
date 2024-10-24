@@ -4,24 +4,24 @@ import { Badge } from '@/components/ui/badge';
 const Skills = () => {
   const skillCategories = [
     {
-      category: "Programming Languages",
-      skills: ["Python", "MATLAB", "C++", "R", "JavaScript"]
-    },
-    {
-      category: "Machine Learning / AI",
-      skills: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras", "Deep Learning"]
-    },
-    {
-      category: "Biomedical Engineering",
-      skills: ["Signal Processing", "Neural Engineering", "BCI Design", "EEG Analysis"]
+      category: "Languages",
+      skills: ["Matlab", "C", "LaTex", "Assembly", "HTML"]
     },
     {
       category: "Data Analysis",
-      skills: ["Pandas", "NumPy", "SciPy", "Matplotlib", "Seaborn"]
+      skills: ["Python", "Numpy", "Pandas", "Matplotlib"]
     },
     {
-      category: "Tools & Technologies",
-      skills: ["Git", "Docker", "CUDA", "LabVIEW", "SPSS"]
+      category: "Software",
+      skills: [
+        "Google Colab", "Google Docs", "Microsoft Office Suite", "MATLAB", 
+        "Proteus", "Tinkercad", "PSIM", "Adobe Illustrator", " Adobe Photoshop", 
+        "Digital Literacy", "AI Tools"
+      ]
+    },
+    {
+      category: "Interpersonal Skills",
+      skills: ["Documentation", "Event Management", "Problem-solving", "Troubleshooting", "Presentation", "Teamwork"]
     }
   ];
 
