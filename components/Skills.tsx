@@ -9,7 +9,7 @@ const Skills = () => {
     },
     {
       category: "Data Analysis",
-      skills: ["Python", "Numpy", "Pandas", "Matplotlib"]
+      skills: ["Python", "Numpy", "Pandas", "Matplotlib","Seaborn"]
     },
     {
       category: "Software",
