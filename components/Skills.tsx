@@ -1,22 +1,27 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import React from 'react';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Badge } from '../components/ui/badge';
 
-const Skills = () => {
-  const skillCategories = [
+interface SkillCategory {
+  category: string;
+  skills: string[];
+}
+
+const Skills: React.FC = () => {
+  const skillCategories: SkillCategory[] = [
     {
       category: "Languages",
       skills: ["Matlab", "C", "LaTex", "Assembly", "HTML"]
     },
     {
       category: "Data Analysis",
-      skills: ["Python", "Numpy", "Pandas", "Matplotlib","Seaborn"]
+      skills: ["Python", "Numpy", "Pandas", "Matplotlib", "Seaborn"]
     },
     {
       category: "Software",
       skills: [
-        "Google Colab", "Google Docs", "Microsoft Office Suite", "MATLAB", 
-        "Proteus", "Tinkercad", "PSIM", "Adobe Illustrator", " Adobe Photoshop", 
-        "Digital Literacy", "AI Tools"
+        "Google Colab", "Google Docs", "Microsoft Office Suite", "MATLAB",
+        "Proteus", "Tinkercad", "PSIM", "Adobe Illustrator", "Adobe Photoshop", "AI Tools"
       ]
     },
     {
@@ -37,7 +42,7 @@ const Skills = () => {
             <CardContent>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, idx) => (
-                  <Badge key={idx} variant="secondary">{skill}</Badge>
+                  <Badge key={`${index}-${idx}`}>{skill}</Badge>
                 ))}
               </div>
             </CardContent>
