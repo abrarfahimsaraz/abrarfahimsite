@@ -52,7 +52,7 @@ const Publications = () => {
 
               {/* Conditional grid layout for the first publication */}
               {index === 0 ? (
-                <div className="grid grid-cols-3 gap-4 mt-4">
+                <div className="grid grid-cols-3 gap-2 mt-2">
                   <div className="col-span-2">
                     <img
                       src={pub.images[0]}
@@ -60,7 +60,7 @@ const Publications = () => {
                       className="w-full h-auto max-w-xs max-h-64 rounded-lg"
                     />
                   </div>
-                  <div className="grid grid-rows-2 gap-4">
+                  <div className="grid grid-rows-2 gap-2">
                     {pub.images.slice(1).map((image, imgIndex) => (
                       <img
                         key={imgIndex}
@@ -72,7 +72,7 @@ const Publications = () => {
                   </div>
                 </div>
               ) : (
-                <div className="grid grid-cols-2 gap-4 mt-4">
+                <div className="grid grid-cols-2 gap-2 mt-2">
                   {pub.images.map((image, imgIndex) => (
                     <img
                       key={imgIndex}
