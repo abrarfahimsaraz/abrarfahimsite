@@ -52,33 +52,33 @@ const Publications = () => {
 
               {/* Conditional grid layout for the first publication */}
               {index === 0 ? (
-                <div className="grid grid-cols-3 gap-2 mt-2">
+                <div className="grid grid-cols-3 gap-4 mt-4">
                   <div className="col-span-2">
                     <img
                       src={pub.images[0]}
                       alt={`${pub.title} image 1`}
-                      className="w-full h-auto max-w-xs max-h-64 rounded-lg"
+                      className="w-full h-auto rounded-lg"
                     />
                   </div>
-                  <div className="grid grid-rows-2 gap-2">
+                  <div className="grid grid-rows-2 gap-4">
                     {pub.images.slice(1).map((image, imgIndex) => (
                       <img
                         key={imgIndex}
                         src={image}
                         alt={`${pub.title} image ${imgIndex + 2}`}
-                        className="w-full h-auto max-w-xs max-h-32 rounded-lg"
+                        className="w-full h-auto rounded-lg"
                       />
                     ))}
                   </div>
                 </div>
               ) : (
-                <div className="grid grid-cols-2 gap-2 mt-2">
+                <div className="grid grid-cols-2 gap-4 mt-4">
                   {pub.images.map((image, imgIndex) => (
                     <img
                       key={imgIndex}
                       src={image}
                       alt={`${pub.title} image ${imgIndex + 1}`}
-                      className="w-full h-auto max-w-xs max-h-32 rounded-lg"
+                      className="w-full h-auto rounded-lg"
                     />
                   ))}
                 </div>
