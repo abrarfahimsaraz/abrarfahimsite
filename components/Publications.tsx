@@ -57,7 +57,7 @@ const Publications = () => {
                     <img
                       src={pub.images[0]}
                       alt={`${pub.title} image 1`}
-                      className="w-full h-auto rounded-lg"
+                      className="w-full h-auto max-w-xs max-h-64 rounded-lg"
                     />
                   </div>
                   <div className="grid grid-rows-2 gap-4">
@@ -66,7 +66,7 @@ const Publications = () => {
                         key={imgIndex}
                         src={image}
                         alt={`${pub.title} image ${imgIndex + 2}`}
-                        className="w-full h-auto rounded-lg"
+                        className="w-full h-auto max-w-xs max-h-32 rounded-lg"
                       />
                     ))}
                   </div>
@@ -78,7 +78,7 @@ const Publications = () => {
                       key={imgIndex}
                       src={image}
                       alt={`${pub.title} image ${imgIndex + 1}`}
-                      className="w-full h-auto rounded-lg"
+                      className="w-full h-auto max-w-xs max-h-32 rounded-lg"
                     />
                   ))}
                 </div>
