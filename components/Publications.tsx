@@ -8,8 +8,8 @@ const Publications = () => {
       status: "Under Review, ICCIT 2024, IEEE Conferences",
       images: [
         "https://i.ibb.co/B4fvWcH/SHAP.jpg",
-        "https://i.ibb.co/RB1YddH/LIME.png",
-        "https://i.ibb.co/d6GkQJg/Table.png"
+        "https://i.ibb.co/d6GkQJg/Table.png",
+        "https://i.ibb.co.com/6b12xqC/image-2024-11-20-163539528.png"
       ]
     },
     {
@@ -50,10 +50,10 @@ const Publications = () => {
               <br /> {/* Line break for space between description and status */}
               <p className="text-foreground/60">{pub.status}</p>
 
-              {/* Conditional grid layout for the first publication */}
+              {/* Conditional layout for the first publication */}
               {index === 0 ? (
-                <div className="grid grid-cols-3 gap-4 mt-4">
-                  <div className="col-span-2">
+                <div className="grid grid-cols-2 gap-4 mt-4">
+                  <div>
                     <img
                       src={pub.images[0]}
                       alt={`${pub.title} image 1`}
@@ -61,14 +61,16 @@ const Publications = () => {
                     />
                   </div>
                   <div className="grid grid-rows-2 gap-4">
-                    {pub.images.slice(1).map((image, imgIndex) => (
-                      <img
-                        key={imgIndex}
-                        src={image}
-                        alt={`${pub.title} image ${imgIndex + 2}`}
-                        className="w-full h-auto rounded-lg"
-                      />
-                    ))}
+                    <img
+                      src={pub.images[1]} /* Third image */
+                      alt={`${pub.title} image 2`}
+                      className="w-full h-auto rounded-lg"
+                    />
+                    <img
+                      src={pub.images[2]} /* Fourth image */
+                      alt={`${pub.title} image 3`}
+                      className="w-full h-auto rounded-lg"
+                    />
                   </div>
                 </div>
               ) : (
