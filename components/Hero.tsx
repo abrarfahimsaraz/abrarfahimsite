@@ -8,7 +8,7 @@ const Hero = () => {
         Abrar Fahim
       </h1>
       <h2 className="text-2xl md:text-3xl text-white mb-8">
-        Aspiring PhD Candidate in Biomedical Engineering and Machine Learning
+        Aspirant PhD Candidate | Interested in AI4Health and Machine Learning
       </h2>
       <Button className="bg-white text-primary hover:bg-primary hover:text-white transition-colors duration-300">
         About My Research <ArrowRight className="ml-2 h-4 w-4" />
