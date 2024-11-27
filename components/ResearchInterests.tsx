@@ -16,8 +16,8 @@ const ResearchInterests = () => {
     
     
     {
-      title: "Nanomedicine",
-      description: "Investigating the use of nanoparticles and nanotechnology for targeted drug delivery, cancer therapy, and improving the efficiency of medical treatments at the molecular level."
+      title: "Image Processing",
+      description: "Exploring the use of machine learning algorithms for enhancing image processing techniques, enabling more accurate analysis, pattern recognition, and automation in various fields such as healthcare and security."
     },
     {
       title: "Medical Imaging",
