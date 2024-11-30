@@ -5,7 +5,7 @@ const Publications = () => {
     {
       title: "Predicting Antibiotic Resistance in Gonococcal Gonorrhea: A Comparative Study of Machine Learning and Deep Learning Approaches with Explainable AI",
       description: "Utilized Explainable AI (XAI) tools to explore machine learning and deep learning techniques, such as GRU and LSTM, for predicting antibiotic resistance in Neisseria gonorrhoeae, demonstrating high prediction accuracy and potential solutions for antibiotic resistance in public health.",
-      status: "Under Review, ICCIT 2024, IEEE Conferences",
+      status: "Accepted for Presentation, ICCIT 2024, IEEE Conferences",
       images: [
         "https://i.ibb.co/B4fvWcH/SHAP.jpg",
         "https://i.ibb.co/d6GkQJg/Table.png",
@@ -15,7 +15,7 @@ const Publications = () => {
     {
       title: "Analysis of Pre-trained CNN Models in MRI-Based Brain Tumor Detection",
       description: "Performed a comparative analysis of five pre-trained CNN models (InceptionV3, ResNet-50, VGG-16, MobileNetV2, DenseNet121) for classifying brain tumors in MRI images, with DenseNet121 and MobileNetV2 achieving the highest test accuracy in both binary and multi-class classification tasks, showing promise for clinical use.",
-      status: "Under Review, ICCIT 2024, IEEE Conferences",
+      status: "Accepted for Presentation, ICCIT 2024, IEEE Conferences",
       images: [
         "https://i.ibb.co.com/vD13QxX/Brain-Images.png",
         "https://i.ibb.co.com/d5WJg49/Archii.jpg",
@@ -26,7 +26,7 @@ const Publications = () => {
     {
       title: "VisionEdge: Cataract Detection via Smartphone",
       description: "Developed VisionEdge, a mobile app using MobileNetV2 for real-time cataract detection with 99.11% accuracy, optimized for Edge Intelligence, providing a cost-effective and accessible solution for cataract screening.",
-      status: "Under Review, ICCIT 2024, IEEE Conferences",
+      status: "Accepted for Presentation, ICCIT 2024, IEEE Conferences",
       images: [
         "https://i.ibb.co.com/bzKT5mB/Flowchart.png",
         "https://i.ibb.co.com/Xxs3XCc/Archi.png",
